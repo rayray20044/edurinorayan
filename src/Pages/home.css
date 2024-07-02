@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 460px; /* Match the video width */
+    height: 270px; /* Match the video height */
+    z-index: 2;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.play-button {
+    background-color: #7b1fa2; /* Purple blob */
+    border: 2px solid #ff8f00; /* Orange outline */
+    border-radius: 50%; /* Rounded shape */
+    padding: 20px; /* Adjust padding */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    position: absolute;
+    z-index: 3;
+}
+
+.play-button:hover {
+    background-color: #6a1b9a; /* Darker purple on hover */
+    border-color: #e65100; /* Darker orange on hover */
+}
+
+.play-icon {
+    font-size: 36px; /* Adjust size of play icon */
+    color: #fff; /* White color */
+}
+
+.play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
