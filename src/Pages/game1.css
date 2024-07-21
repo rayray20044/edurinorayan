@@ -3,14 +3,17 @@
     padding: 0;
 }
 
-body{
-    font-family: "American Typewriter";
-    font-size: large;
-    color: #f8f8f8;
-    background-color: #3FC0F0;
+
+.container3 {
+    position: relative;
+    height: 1132px;
+    width: 744px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    background-color: #3eb5e4;
+    overflow: hidden;
 }
 
 
@@ -18,13 +21,15 @@ h1{
     text-align: center;
     margin-bottom: 1em;
 }
+
 .container{
-    height: 700px;
+    height: 570px;
     width: 700px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 1em;
+    z-index: 20;
 }
 
 .card{
@@ -75,4 +80,52 @@ h1{
 }
 .card.active img{
     transform: scale(1);
+}
+
+
+
+.sqaure1 {
+    height: 500px;
+    width: 744px;
+    background-color: #c5edfc;
+    z-index: 1;
+}
+
+
+.asaface {
+    max-width: 700px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    bottom: 710px;
+    z-index: 4;
+}
+
+.asa-image {
+    width: 330px;
+    height: 300px;
+    z-index: 4;
+}
+
+h1{
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    background: #8C52FFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+}
+
+.circleface {
+    background-color: #fd9100;
+    width: 250px;
+    height: 250px;
+    right: 30px;
+    bottom: 740px;
+    z-index: 2;
 }

@@ -1,26 +1,19 @@
-.container {
+.container1 {
     position: relative;
-    height: 100vh;
+    height: 1132px;
+    width:744px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-}
-
-.background-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
+    background-color: #3eb5e4;
+    overflow: hidden;
 }
 
 .video-wrapper {
     position: relative;
-    width: 460px; /* Match the video width */
-    height: 270px; /* Match the video height */
+    width: 770px;
+    height: 415px;
     z-index: 2;
 }
 
@@ -33,28 +26,206 @@
 }
 
 .play-button {
-    background-color: #7b1fa2; /* Purple blob */
-    border: 2px solid #ff8f00; /* Orange outline */
-    border-radius: 50%; /* Rounded shape */
-    padding: 20px; /* Adjust padding */
+    background-color: #fd9100;
+    border: 7px solid #ff8f00;
+    border-radius: 50px;
+    padding: 40px 60px;
     cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
     position: absolute;
-    z-index: 3;
+    bottom: 400px;
+    right: 300px;
+    z-index: 42;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .play-button:hover {
-    background-color: #6a1b9a; /* Darker purple on hover */
-    border-color: #e65100; /* Darker orange on hover */
+    transform: scale(1.20);
 }
 
 .play-icon {
-    font-size: 36px; /* Adjust size of play icon */
-    color: #fff; /* White color */
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: -4px;
 }
 
-.play-button {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.play-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #8c52ff;
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
+
+.play-button:hover::before {
+    transform: scale(2);
+}
+
+.fox-container {
+    max-width: 900px;
+    height: auto;
+    position: absolute;
+    right: -34px;
+    bottom: 0;
+    z-index: 41;
+
+}
+
+.fox-image {
+    width: 450px;
+    height: auto;
+}
+
+
+.rocket-container {
+    max-width: 700px;
+    height: auto;
+    position: absolute;
+    right: 400px;
+    bottom: 600px;
+   z-index: 10;
+}
+
+.rocket-image {
+    width: 200px;
+    height: 200px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 100%;
+}
+
+.circle1 {
+    background-color: #8c52ff;
+    width: 80px;
+    height: 80px;
+    top: -20px;
+    left: -10px;
+    z-index: 40;
+}
+
+.circle2 {
+    background-color: #3eb5e4;
+    width: 30px;
+    height: 30px;
+    bottom: 1050px;
+    right: 650px;
+    z-index: 40;
+}
+
+.circle3 {
+    background-color: #fd9100;
+    width: 150px;
+    height: 150px;
+    bottom: 1030px;
+    right: -60px;
+    z-index: 40;
+}
+
+.circle4 {
+    background-color: #3eb5e4;
+    width: 30px;
+    height: 30px;
+    bottom: 1030px;
+    right: 80px;
+    z-index: 40;
+}
+
+
+.circle5 {
+    background-color: #8c52ff;
+    width: 50px;
+    height: 50px;
+    bottom: 980px;
+    right: 20px;
+    z-index: 40;
+}
+
+.circle6 {
+    background-color: #3eb5e4;
+    width: 150px;
+    height: 150px;
+    bottom: 620px;
+    right: 600px;
+    z-index: 40;
+}
+
+.circle7 {
+    background-color: #fd9100;
+    width: 50px;
+    height: 50px;
+    bottom: 630px;
+    right: 300px;
+    z-index: 40;
+}
+
+.circle8 {
+    background-color: #8c52ff;
+    width: 120px;
+    height: 120px;
+    bottom: 660px;
+    right: 185px;
+    z-index: 1;
+}
+
+
+.circle9 {
+    background-color: #3eb5e4;
+    width: 150px;
+    height: 150px;
+    bottom: 620px;
+    right: 600px;
+    z-index: 40;
+}
+
+.circle10 {
+    background-color: #8c52ff;
+    width: 150px;
+    height: 150px;
+    bottom: -20px;
+    right: 30px;
+    z-index: 40;
+}
+
+.circle11 {
+    background-color: #fd9100;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 190px;
+    z-index: 40;
+}
+
+
+.circle12 {
+    background-color: #8c52ff;
+    width: 30px;
+    height: 30px;
+    bottom: 80px;
+    right: 180px;
+    z-index: 40;
+}
+
+
+.circle13 {
+    background-color: #3eb5e4;
+    width: 30px;
+    height: 30px;
+    bottom: 80px;
+    right: 180px;
+    z-index: 40;
+}
+
+

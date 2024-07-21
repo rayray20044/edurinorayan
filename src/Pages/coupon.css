@@ -1,0 +1,88 @@
+.container4 {
+    position: relative;
+    height: 1132px;
+    width: 744px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #3eb5e4;
+    overflow: hidden;
+}
+
+.squarecontainer {
+    background-color: #8C52FE;
+    width: 640px;
+    height: 680px;
+    border: 7px solid #fd9100;
+    border-radius: 40px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative; /* Necessary for absolute positioning of children */
+}
+
+.couponcontainer {
+    background-color: #FFFFFF;
+    width: 580px;
+    height: 300px;
+    border-radius: 40px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.stufftobuy-image {
+    width: 350px;
+    height: 310px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h4 {
+    font-size: 90px;
+    font-family: cursive;
+    margin: 60px;
+    color: #fd9100;
+}
+
+.email-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.email-submit {
+    padding: 10px 20px;
+    background-color: #fd9100;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email-submit:hover {
+    background-color: #d77c02;
+}
+
+h6 {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+   margin-top: 50px;
+    color: rgba(246, 166, 61, 0.78);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
